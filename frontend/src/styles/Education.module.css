@@ -1,0 +1,122 @@
+/* Basic styles for the Education component */
+.educationContainer {
+  background: none;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.eduContainer {
+  padding: 20px;
+}
+.heading {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  color: #a374ff;
+  text-align: left;
+}
+
+/* Flexbox container for the logo and school information */
+.educationHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+}
+
+/* Logo container styles */
+.logoContainer {
+  height: 120px;
+  width: 180px;
+  border-radius: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 15px;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 0%;
+  background-color: white;
+}
+
+/* School info (name, degree, and year) */
+.schoolInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+/* School name styles */
+.schoolName {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  color:#17F1D0
+}
+
+/* Degree styles */
+.degree {
+  font-size: 1.4rem;
+  color: #ffffe3;
+  margin: 5px 0;
+}
+
+/* Year styles */
+.year {
+  font-size: 1.2rem;
+  color: #FEC5FB;
+}
+
+
+/* Responsive styling for tablets */
+@media (max-width: 768px) {
+  .educationContainer {
+    padding: 15px;
+  }
+
+  .schoolName {
+    font-size: 1.6rem;
+  }
+
+  .degree {
+    font-size: 1.3rem;
+  }
+
+  .logoContainer {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 480px) {
+  .educationContainer {
+    padding: 10px;
+  }
+
+  .educationHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logoContainer {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+  }
+
+  .schoolName {
+    font-size: 1.4rem;
+  }
+
+  .degree {
+    font-size: 1.2rem;
+  }
+  .year {
+    font-size: 1rem;
+  }
+}

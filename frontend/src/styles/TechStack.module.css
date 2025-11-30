@@ -1,0 +1,36 @@
+/* TechStack.module.css */
+.techStackContainer {
+  padding: 20px;
+  text-align: center;
+  overflow: hidden; /* Ensure the SVGs are clipped when outside the container */
+}
+
+.heading {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  color: #a374ff;
+  text-align: left;
+}
+
+.svgContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  white-space: nowrap; /* Prevent line breaks for the SVGs */
+  animation: moveLeft 20s linear infinite; /* Animate the movement */
+  padding: 30px;
+}
+
+.svgContainer img {
+  height: 80px; /* Adjust the size of SVGs */
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

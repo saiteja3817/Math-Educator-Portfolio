@@ -1,0 +1,117 @@
+/* Basic styles for the Certification component */
+.certificationContainer {
+  background: none;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.heading {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  color: #a374ff;
+  text-align: left;
+}
+
+/* Flexbox container for the logo and certification information */
+.certificationHeader {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+/* Logo container styles */
+.logoContainer {
+  width: 180px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 15px;
+  padding: 10px;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* Year styles */
+.year {
+  font-size: 1.2rem;
+  color: #FEC5FB;
+}
+
+
+/* Certification info container styles */
+.certificationInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Certification title styles */
+.certificationTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 0 10px;
+  color: #17F1D0;
+}
+
+/* Issuer styles */
+.issuer {
+  font-size: 1.4rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Issue date styles */
+.issueDate {
+  font-size: 1.2rem;
+  color: #ffffe3;
+  margin: 5px 0;
+}
+
+/* Responsive styling for tablets */
+@media (max-width: 768px) {
+  .certificationContainer {
+    padding-left: 15px;
+    margin-left: 20px;
+  }
+
+  .certificationTitle {
+    padding-left: 10px;
+    font-size: 1.6rem;
+  }
+  .issueDate {
+    padding-left: 10px;
+  }
+
+  .logoContainer {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 480px) {
+  .certificationContainer {
+    padding-left: 10px;
+  }
+
+  .certificationHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logoContainer {
+    width: 45px;
+    height: 45px;
+  }
+  .certificationTitle {
+    font-size: 1.4rem;
+  }
+  .issueDate {
+    font-size: 1rem;
+  }
+}

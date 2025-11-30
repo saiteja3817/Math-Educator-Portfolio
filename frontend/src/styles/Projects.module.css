@@ -1,0 +1,198 @@
+.techStackContainer {
+  padding: 20px;
+  text-align: center;
+  overflow: hidden; /* Ensure the SVGs are clipped when outside the container */
+}
+
+.heading {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  color: #a374ff;
+  text-align: left;
+}
+
+.projectsSection {
+  position: relative;
+  padding-top: 4vh;
+  height: auto; /* Change height to auto to allow it to grow based on content */
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.sectionText {
+  text-align: center;
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.experienceDetailsContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.projectsContainer {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+}
+
+.detailsContainer {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  text-align: center;
+}
+
+.colorContainer {
+  background-color: rgb(250, 250, 250);
+}
+
+.articleContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  background-color: white;
+  width: 100%; /* Set to your desired width */
+  overflow: hidden; /* Hide any overflow */
+  position: relative; /* Positioning context for absolute elements */
+}
+
+.projectImg {
+  border-radius: 1rem;
+  height: 210px;
+  background-color: white;
+  object-fit: cover; /* Ensures the image covers the entire container, cropping as necessary */
+  object-position: center; /* Center the image within the container */
+}
+
+.projectTitle {
+  color: black;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: white;
+}
+
+.btn {
+  font-weight: 600;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  transition: all 300ms ease;
+  border: 0.1rem solid rgb(163, 163, 163);
+}
+
+.projectBtn {
+  background: none;
+  color: black;
+}
+
+.projectBtn:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+  cursor: pointer;
+}
+.insttitle{
+  text-align: left;
+  font-size: 1.8rem;
+  color: #A374FF;
+}
+.subheading{
+  text-align: left;
+  font-size: 1.4rem;
+  color:#17F1D0;
+}
+
+.modalTitle{
+  text-align: left;
+  font-size: 1.8rem;
+  color: #A374FF;
+  margin-left: 1rem;
+  padding-top: 1rem;
+}
+.modalProblemDetails{
+  text-align: left;
+  font-size: 1.2rem;
+  color:#ffffe3;
+  margin-left: 1rem;
+}
+.modalSubHeading{
+  font-size: 1.4rem;
+  color:#17F1D0;
+}
+.btn1{
+  background-color: white;
+  font-weight: 600;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  transition: all 300ms ease;
+  border: 0.1rem solid rgb(163, 163, 163);
+}
+.projectBtn1{
+  background-color: white !important; 
+  color: black;
+  background: none;
+  margin-bottom: 1rem;
+}
+.projectBtn1:hover {
+  background: rgb(53, 53, 53) !important;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+/* Media Queries */
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+  .projectsSection {
+    margin: 0 5rem; /* Reduce margin for smaller screens */
+  }
+  .projectsContainer {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .projectsSection {
+    margin: 0 1.5rem; /* Further reduce margin for mobile */
+  }
+  .projectsContainer {
+    grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+  }
+  .detailsContainer {
+    padding: 1rem; /* Reduce padding to fit smaller screens */
+  }
+  .projectImg {
+    height: 160px; /* Reduce image height for mobile */
+  }
+  .btn {
+    padding: 0.7rem; /* Reduce button padding */
+    width: 6rem; /* Make buttons smaller */
+    font-size: 0.9rem; /* Reduce button font size */
+  }
+  .heading {
+    font-size: 2rem; /* Adjust the heading size for mobile */
+  }
+  .projectTitle {
+    font-size: 1.5rem; /* Adjust project title size */
+  }
+}
