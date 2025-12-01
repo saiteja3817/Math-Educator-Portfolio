@@ -41,6 +41,7 @@
 .year {
   font-size: 1.2rem;
   color: #FEC5FB;
+  padding: 10px;
 }
 
 
@@ -88,8 +89,8 @@
   }
 
   .logoContainer {
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 120px;
   }
 }
 
@@ -105,8 +106,8 @@
   }
 
   .logoContainer {
-    width: 45px;
-    height: 45px;
+    width: 120px;
+    height: 90px;
   }
   .certificationTitle {
     font-size: 1.4rem;
