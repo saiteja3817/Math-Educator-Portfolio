@@ -5,10 +5,5 @@
   margin: 80px;
 }
 
-/* Mobile (max-width 600px for example) */
-@media (max-width: 600px) {
-  .hero-img {
-    width: 60%;
-  }
-}
+
 
