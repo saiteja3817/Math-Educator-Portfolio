@@ -152,7 +152,7 @@ const Projects = () => {
                     className={`${styles.btn} ${styles.projectBtn}`}
                     onClick={() => openModal(project)}
                   >
-                    Live Demo
+                    Course Details
                   </button>
                 </div>
               </div>
