@@ -1,6 +1,30 @@
 .hero-img {
   width: 40%;
   height: auto;
-  border: 40px ;
   margin: 80px;
+  display: block;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .hero-img {
+    width: 60%;
+    margin: 50px auto;
+  }
+}
+
+/* Large Mobile (e.g., 600px–768px) */
+@media (max-width: 768px) {
+  .hero-img {
+    width: 80%;
+    margin: 40px auto;
+  }
+}
+
+/* Small Mobile (below 600px) */
+@media (max-width: 600px) {
+  .hero-img {
+    width: 95%;
+    margin: 20px auto;
+  }
 }
